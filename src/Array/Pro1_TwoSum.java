@@ -43,7 +43,7 @@ import java.util.HashMap;
  * Accepted 3,574,903
  * Submissions 7,785,125
  */
-public class TwoSum {
+public class Pro1_TwoSum {
 
     /**
      * 缓存等待法:
@@ -88,7 +88,7 @@ public class TwoSum {
 
 
     public static void main(String[] args) {
-        TwoSum twoSum = new TwoSum();
+        Pro1_TwoSum twoSum = new Pro1_TwoSum();
 
         int [] a = new int[] {3,2,4};
         System.out.println(Arrays.toString(twoSum.twoSum(a, 6)));
