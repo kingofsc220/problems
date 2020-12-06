@@ -119,4 +119,12 @@ public class Pro15_3Sum {
         return new ArrayList<>(set);
     }
 
+
+    public static void main(String[] args) {
+        Pro15_3Sum solution = new Pro15_3Sum();
+
+        int [] a = new int[] {-1,0,1,2,-1,-4};
+        System.out.println(solution.threeSum(a));
+        System.out.println(solution.threeSum2(a));
+    }
 }
