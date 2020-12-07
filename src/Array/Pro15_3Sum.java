@@ -44,7 +44,7 @@ public class Pro15_3Sum {
      *
      * todo: 方法1：缓存等待值法
      * 而 ThreeSum其实就是这两种方法的拓展
-     * 通过最外层 for循环固定一个数，原问题就简化为 TwoSum问题
+     * 通过最外层 for循环固定一个数，原问题就简化为 {@link Pro1_TwoSum}问题
      *
      * 注意：该方法能够正确执行，但可能会超时！！！
      */
@@ -119,8 +119,8 @@ public class Pro15_3Sum {
      * 3个数的查找，想要 O(n)结束战斗肯定是不可能了，
      * 那就可以先排序 O(n*log(n))，再想办法了
      *
-     * 排序后，就转化成了{@link Pro167_TwoSumII_InputArrayIsSorted}
-     * 中的问题，因此参照它的解决方法即可
+     * 排序后，就转化成了{@link Pro167_TwoSumII_InputArrayIsSorted}中的问题，
+     * 因此参照它的解决方法即可
      */
     public List<List<Integer>> threeSum2_1(int[] nums) {
         if (nums == null || nums.length < 3) {
