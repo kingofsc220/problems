@@ -101,12 +101,12 @@ public class Pro11_ContainerWithMostWater {
             if (height[l] < height[r]) {
                 int h = height[l]; //标记当前高度
                 ++l;
-                while (l < r && height[l] < height[h])
+                while (l < r && height[l] < h)
                     ++l; //直到找到一个更高的
             } else {
                 int h = height[r]; //标记当前高度
                 --r;
-                while (l < r && height[r] < height[h])
+                while (l < r && height[r] < h)
                     --r;  //直到找到一个更高的
             }
         }
