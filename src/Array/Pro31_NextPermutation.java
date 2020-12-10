@@ -70,6 +70,10 @@ public class Pro31_NextPermutation {
      *             思路，[1,3,2]为例，找到字数组[3,2]中所有比[1]大的，取其中最小的那个[2]，与[1]做交换
      *                  得到[2,3,1]，再对[3,1]进行升序排序得到[1,3]
      *
+     *   3.计算过程，从后往前查找，找到不满足num[i]<=num[i-1]的位置，
+     *             则 num[i]~num[nums.length - 1] 满足最大子全排列，同时num[i-1]即为需要进位的数。
+     *             对子数组nums[i~nums.length-1]反转，最大子全排列 -> 最小子全排列
+     *             标记字数组中，所有大于num[i-1]的数中，最小的那个数的位置，与num[i-1]进行交换
      *
      */
     public void nextPermutation(int[] nums) {
